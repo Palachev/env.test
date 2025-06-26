@@ -8,8 +8,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster.mongodb.youtyberussia
-      MONGODB_USERNAME: youtyberussia
-      MONGODB_PASSWORD: i8w2GNI4i0id878t
+      MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
     environment: testing
     runs-on: ubuntu-latest
     steps:
