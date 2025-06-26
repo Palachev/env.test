@@ -37,3 +37,4 @@ jobs:
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
           echo "MONGODB_USERNAME: $MONGODB_USERNAME"
           echo "MONGODB_PASSSWORD: ${{env.MONGODB_PASSSWORD}}"
+          echo "MONGODB_PASSSWORD: $MONGODB_PASSSWORD"
