@@ -10,6 +10,7 @@ jobs:
       MONGODB_CLUSTER_ADDRESS: cluster.mongodb.youtyberussia
       MONGODB_USERNAME: ${{secrets.MONGODB_USERNAME}}
       MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
+      MONGODB_PASSSWORD: password
     environment: testing
     runs-on: ubuntu-latest
     steps:
@@ -35,3 +36,4 @@ jobs:
         run: |        
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
           echo "MONGODB_USERNAME: $MONGODB_USERNAME"
+          echo "MONGODB_PASSSWORD: ${{env.MONGODB_PASSSWORD}}"
